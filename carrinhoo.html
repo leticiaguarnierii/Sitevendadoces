@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="style/stylecarrinho.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/">Jojo bolos</a>
+
+        <div class="mobile-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="navbar-collapse">
+          <ul class="navbar-nav ms-auto nav-list">
+                   <li><a href="#">Início</a></li>
+                    <li><a href="#">Carrinho</a></li>
+                    <li><a href="#">Produtos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-title">Seu Carrinho</div>
+    <div class="content">
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Quantidade</th>
+              <th>Total</th>
+              <th>-</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="produto">
+                  <img src="img/brig.PNG" class="card-img-top img-fluid" alt="Brigadeiro">
+                  <div class="info">
+                    <div class="nome">Brigadeiro</div>
+                    <div class="descrição">Brigadeiro com Nutella</div>
+                  </div>
+                </div>
+              </td>
+              <td>R$ 2,50</td>
+              <td>
+                <div class="qty">
+                  <button>-</button>
+                  <span>2</span>
+                  <button>+</button>
+                </div>
+              </td>
+              <td>R$ 5,00</td>
+              <td>
+                <button class="remove"><span class="material-symbols-outlined">close</span></button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="produto">
+                  <img src="img/brig.PNG" class="card-img-top img-fluid" alt="Brigadeiro">
+                  <div class="info">
+                    <div class="nome">Brigadeiro</div>
+                    <div class="descrição">Brigadeiro com Nutella</div>
+                  </div>
+                </div>
+              </td>
+              <td>R$ 2,50</td>
+              <td>
+                <div class="qty">
+                  <button>-</button>
+                  <span>2</span>
+                  <button>+</button>
+                </div>
+              </td>
+              <td>R$ 5,00</td>
+              <td>
+                <button class="remove"><span class="material-symbols-outlined">close</span></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside>
+        <div class="box">
+          <header>Resumo da compra</header>
+          <div class="descrição">
+            <div><span>Sub-total</span> R$48</div>
+            <div><span>Frete</span> Gratuito</div>
+            <div><button>Adicionar cupom de desconto</button></div>
+          </div>
+          <footer>
+            <span>Total</span>
+            <span>R$418</span>
+          </footer>
+          <button class="finalizarbutton">Finalizar compra</button>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="mobile-navbar.js"></script>
+
+</body>
+</html>
+
+   
+
+
