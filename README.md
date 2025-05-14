@@ -6,7 +6,7 @@ Este projeto é uma interface de e-commerce simples, desenvolvida com **HTML** e
 
 - `carrinho.html`: Página principal do carrinho de compras, onde são exibidos os produtos adicionados, seus preços, quantidades e total da compra.
 - `produtos.css`: Estilo visual para os componentes da navegação, produtos e responsividade do layout.
--`index.html`: Pagina inicial visual com produtos.
+-`index.html`: Pagina inicial visual com produtos. Utilizado framwork Materialize
 
 ## 🎨 Funcionalidades
 
