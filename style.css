@@ -1,0 +1,19 @@
+.navbar {
+    background-color: #9b1003;
+}
+.navbar .nav-link{
+    color: white;
+}
+.navbar-brand{
+    color: white;
+}
+.card-img-top{
+    width: 50%;
+    height: 150%;
+    max-width: 250%;
+}
+footer{
+    background-color: #9B1003;
+    color: white;
+    padding: 30px 0;
+}

@@ -1,0 +1,297 @@
+/* Importação da fonte Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Reseta padrões de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para botões */
+button {
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Estilos do body */
+body {
+    background: #f6f6f6;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Estilos do header */
+header {
+    background: #9b1003;
+    color: white;
+    font-size: 24px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos do main */
+main {
+    background: white;
+    padding: 0 30px 30px;
+}
+
+/* Título da página */
+.page-title {
+    background: white;
+    font-size: 40px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Conteúdo principal */
+.content {
+    display: flex;
+}
+
+.content section {
+    flex: 1;
+}
+
+.content aside {
+    min-width: 250px;
+    margin-left: 30px;
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr {
+    border-bottom: 3px solid #eee;
+}
+
+thead th {
+    text-align: left;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+tbody tr {
+    border-bottom: 3px solid #eee;
+}
+
+tbody td {
+    padding: 30px;
+}
+
+/* Estilos para o produto */
+.produto {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 6px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.info {
+    margin-left: 20px;
+}
+
+.nome {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.descrição {
+    color: #666;
+}
+
+/* Estilos para a quantidade */
+.qty {
+    background: #eee;
+    display: inline-flex;
+    justify-content: space-around;
+    min-width: 90px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.qty span {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.qty button {
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 20px;
+    height: 100%;
+}
+
+.qty button:hover {
+    background: #ddd;
+}
+
+/* Estilos para o botão de remoção */
+.remove {
+    background: #eee;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.remove:hover {
+    background: #ddd;
+}
+
+/* Estilos para as caixas laterais */
+aside .box {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background: #ddd;
+}
+
+aside .box header {
+    padding: 15px 20px;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+aside .descrição {
+    padding: 20px;
+    font-size: 16px;
+}
+
+aside .descrição > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+aside .descrição button {
+    color: green;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+aside footer {
+    padding: 15px 20px;
+    background: #ccc;
+    font-size: 18px;
+}
+
+/* Estilos para o botão de finalizar */
+.finalizarbutton {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    width: 250px;
+    height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.finalizarbutton:hover {
+    background-color: darkgreen;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Menu Responsivo */
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+/* Para telas pequenas (dispositivos móveis) */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+
