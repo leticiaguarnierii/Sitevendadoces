@@ -1,19 +1,23 @@
-name: Continuos Integration
+name: Continuous Integration
 
 on: [pull_request, push]
 
 jobs: 
-    continuos-integration:
-        runs-on: ubuntu-latest
+  continuous-integration:
+    runs-on: ubuntu-latest
 
-        steps: 
-        - uses: actions/checkout@v3
-        - name: Using Node.js
-          uses: actions/setup-node@v2
-          with:
-            node-version: 22.
-        - name: run install, build and test
-          run: |
-                npm install
-                npm run build
-                npm run test
+    steps: 
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install, Build and Test
+        run: |
+          cd sitesitedoce
+          npm install
+          npm run build
+          npm run test
+
