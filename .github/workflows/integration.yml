@@ -14,6 +14,7 @@ jobs:
             node-version: 22.
         - name: run install, build and test
           run: |
+                cd 'trabalho site compras de doces'
                 npm install
                 npm run build
                 npm run test
